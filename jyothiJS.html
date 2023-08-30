@@ -24,6 +24,7 @@
         height: 400px;
         background: repeating-conic-gradient(from var(--a),#ff2770 0%,#ff2770 5%,transparent 5%,transparent 40%,#ff2770 50%);
         animation: animate 4s linear infinite;
+        border-radius: 20px;
     }
     @property --a{
         syntax: '<angle>';
@@ -46,7 +47,15 @@
         background: repeating-conic-gradient(from var(--a),#12e362 0%,#12e362 5%,transparent 5%,transparent 40%,#12e362 50%);
         animation: animate 4s linear infinite;
         animation-delay: -1s;
+        border-radius: 20px;
     }
+    .box::after{
+        content:'';
+        position:absolute;
+        inset: 4px;
+        background: #2d2d39;
+        border-radius: 15px;
+        border: 8px solid #25252b;
     }
 </style>
 <body>
